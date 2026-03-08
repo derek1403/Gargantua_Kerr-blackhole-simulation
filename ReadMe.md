@@ -26,7 +26,7 @@
 
 ---
 
-> **平台說明**：此為 Linux 版本，支援多核心平行渲染。Windows 版本請參閱 `README.md`。
+> **平台說明**：此為 Linux 版本，支援多核心平行渲染。[Windows 版本請參閱 `ReadMe.md`](./windows/ReadMe.md)。
 
 
 
