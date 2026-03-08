@@ -1,10 +1,34 @@
-# kerr-blackhole-sim
+# Kerr Blackhole Simulation
 
 廣義相對論黑洞渲染器。把愛因斯坦場方程轉化為電影級 3D 動畫。
 
-> **平台說明**：此為 Linux 版本，支援多核心平行渲染。Windows 版本請參閱 `README.md`。
+## 方法解釋
+
+![](./readme_pic/2D_explain.png)
+
+![](./readme_pic/3D_explain.png)
+
+專案輸出的圖片就會是我們從宇宙中看到的光線的匯集，也就是那個板，透過增加解析度可以模擬在有良好設備的情況下真實會觀察到的情況。
+
+## 具體效果
+
+![](./readme_pic/blackhole_10.png)
+
+這就是回輸出的圖片，我們可以自由調整攝影機的位置、角度、距離。
+
+![](./readme_pic/post_process.png)
+
+也可以做一些後製的調整。
+
+![](./readme_pic/sim_compare_with_obs.png)
+
+最後當然是跟實際觀測到的黑動作比較，這個是從高仰角($~50^{\circ}$)看到的景象 (ゝ∀・)b
 
 ---
+
+> **平台說明**：此為 Linux 版本，支援多核心平行渲染。Windows 版本請參閱 `README.md`。
+
+
 
 ## 專案結構
 
@@ -135,10 +159,8 @@ parallel_render.py
 | | 單核序列 | 平行（12 核） |
 |---|---|---|
 | 120 幀 @ 350px | ~40 min | ~4 min |
-| OpenBLAS 競爭 | 無 | 無（每個 subprocess 獨立）|
 | 失敗重跑 | 全部重來 | `--retry-failed` 只補缺幀 |
 
-> **原理**：OpenBLAS 預設會佔用所有核心跑矩陣運算。若在同一個 process 內啟動多個 numpy worker，會造成 N process × 12 thread 互搶 12 核的 thrashing。改為獨立 subprocess 後，每個 subprocess 自然只使用分配到的核心，無競爭。
 
 ---
 
@@ -212,4 +234,4 @@ CAMERA_KEYFRAMES = [
 - **吸積盤**：體積光線追蹤 + Beer-Lambert Alpha 合成
 - **相對論效應**：都卜勒頻移 + 引力紅移（劉維定理 $I \propto g^4$）
 - **逃逸閾值**：動態計算為攝影機距離的 1.2 倍，避免大距離鏡頭誤判光子逃逸
-- **下一步**：升級至 Kerr 度規，加入參考系拖曳（frame-dragging），黑洞陰影從圓形變為 D 型
+- **下一步**：升級至 Kerr 度規，加入參考系拖曳（frame-dragging），黑洞陰影從圓形變為 D 型 :D 來日方長
