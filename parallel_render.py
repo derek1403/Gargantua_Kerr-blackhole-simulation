@@ -23,7 +23,7 @@ from camera_path import build_camera_path
 
 def _run_single_frame(cmd: list[str], frame_id: int, total: int) -> tuple[int, bool, str]:
     try:
-        result = subprocess.run(cmd, capture_output=True, text=True, timeout=600)
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=None) # 不設 timeout，讓子程序自己決定何時結束 或者可以設置一個合理的 timeout，例如 600 秒，避免無限掛起
         if result.returncode == 0:
             return frame_id, True, ""
         else:
