@@ -24,7 +24,7 @@
 
 最後當然是跟實際觀測到的黑動作比較，這個是從高仰角($~50^{\circ}$)看到的景象 (ゝ∀・)b
 
-[![黑洞模擬效果](https://img.youtube.com)](https://www.youtube.com/watch?v=QjVldy41jws)
+![[](./readme_pic/gargantua_orbit350.gif)](https://www.youtube.com/watch?v=QjVldy41jws)
 
 來看看解析度350*350的影片 🎈🎃🎁 
 
