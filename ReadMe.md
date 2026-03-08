@@ -24,6 +24,9 @@
 
 最後當然是跟實際觀測到的黑動作比較，這個是從高仰角($~50^{\circ}$)看到的景象 (ゝ∀・)b
 
+![](./output/videos/gargantua_orbit350.mp4)
+
+來看看解析度350*350的影片 🎈🎃🎁 
 ---
 
 > **平台說明**：此為 Linux 版本，支援多核心平行渲染。[Windows 版本請參閱 `ReadMe.md`](./windows/ReadMe.md)。
@@ -235,3 +238,16 @@ CAMERA_KEYFRAMES = [
 - **相對論效應**：都卜勒頻移 + 引力紅移（劉維定理 $I \propto g^4$）
 - **逃逸閾值**：動態計算為攝影機距離的 1.2 倍，避免大距離鏡頭誤判光子逃逸
 - **下一步**：升級至 Kerr 度規，加入參考系拖曳（frame-dragging），黑洞陰影從圓形變為 D 型 :D 來日方長
+
+
+---
+# 參考資料
+
+* [我用物理公式"造"了一个黑洞，结果和NASA拍的一模一样！](https://www.bilibili.com/video/BV1RpZHBFE1C)
+* [我們對太空有什麽了解？](https://starwalk.space/zh-Hant/news/what-is-space)
+
+# 致謝、共同編程
+
+* Gemini🥇
+* Claude🥈
+* PC(我)🥉
