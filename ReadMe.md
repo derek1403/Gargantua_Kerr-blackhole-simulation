@@ -27,7 +27,12 @@
 
 [![點擊觀看影片](./readme_pic/gargantua_orbit350.gif)](https://www.youtube.com/watch?v=QjVldy41jws)
 
-來看看解析度350*350的影片 🎈🎃🎁 
+
+來看看解析度[350\*350](https://www.youtube.com/watch?v=QjVldy41jws)與[800\*800的影片(這個GIF太肥ㄌ)](https://www.youtube.com/watch?v=NzW3N09WQOc) 🎈🎃🎁 
+
+另外可以注意到，因為我們作了一點色彩上的調整，所以傾斜角度看的紅移效應可能還是有點明顯，但是轉換到正頭頂去看這個色彩的強化效果就會消失，屬於是頭對尾對中間大概對 😁
+
+![](./readme_pic/view_90deg.png)
 
 ---
 
